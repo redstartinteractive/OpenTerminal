@@ -272,7 +272,9 @@ public class Terminal : MonoBehaviour
             InputText = AutoCompList[AutoCompIndex];
             AutoCompList.Clear();
         }
-        else
+        else if(InputText.Length > 0)
+        {
             PreExecute();
+        }
     }
 }
