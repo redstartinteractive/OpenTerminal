@@ -1,0 +1,14 @@
+{
+    "name": "io.redstart.open-terminal",
+    "displayName": "Open Terminal",
+    "version": "1.0.0",
+    "unity": "2021.2",
+    "description": "A runtime visual terminal for adding cheat codes and other custom commands with autocomplete, attribute based commands and more!",
+    "samples": [
+        {
+            "displayName": "Rotating Cube",
+            "description": "A simple example that adds terminal commands for controlling the rotation of a cube.",
+            "path":"Samples~/RotatingCube"
+        }
+    ]
+}

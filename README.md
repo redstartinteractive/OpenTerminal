@@ -1,4 +1,4 @@
-# Unity OpenTerminal (Mobile support!)
+# Unity OpenTerminal
 
 ## Features
 
@@ -7,23 +7,18 @@
 - Shows return type of a command in terminal
 - Custom Terminal configs.
 - AutoComplete: press tab and see available commands. thanks to [@kenculate](https://github.com/kenculate)
-- NEW: Report your game log to an email address(useful for testers)
-
-Now you can simply do [almost!] anything at runtime using OpenTerminal!
+- Report your game log to an email address(useful for testers)
+- Mobile input support
 
 ![open-terminal](https://user-images.githubusercontent.com/6388730/84697557-9be01b00-af63-11ea-9971-e3e4dd3922c3.gif)
 
 ## How to use
 
-- Add [TerminalCommand("commandName", "commandDescription")] Attribute to public
-  MonoBehaviour methods.
+- Add [TerminalCommand("commandName", "commandDescription")] Attribute to public MonoBehaviour methods.
 - Create an empty game object and add Terminal component to it.
-- Run your game and press ` (the button usually on top of Tab button). On mobile long press with 4 fingers to show terminal.
-- Type your commandName and it will be execute!
-
-## Enable terminal in mobile
-
-![4-fingers-tap-gesture-icon](https://user-images.githubusercontent.com/6388730/28248214-f352bd1c-6a55-11e7-9bdf-bccced72bb9e.png)
+- Run your game and press ` (tilde) to show the terminal. 
+- On mobile long press with 4 fingers to show terminal.
+- Type your commandName and it will execute!
 
 ## Code usage
 
@@ -60,9 +55,3 @@ Edit config file to change fonts and colors
 ## License
 
 [MIT License](LICENSE)
-
-## Contacts
-
-Telegram: [@omid3098](https://t.me/omid3098)  
-Twitter: [@omid3098](https://twitter.com/omid3098)  
-E-Mail: [info@omid-saadat.com](mailto:info@omid-saadat.com)
