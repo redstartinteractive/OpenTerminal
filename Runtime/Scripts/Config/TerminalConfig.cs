@@ -4,6 +4,7 @@ public class TerminalConfig : ScriptableObject
 {
     public string console;
     public Font font;
+    public int fontSize;
     public Color commandColor;
     public Color backgroundColor;
     public Color autoCompleteHoverColor;
