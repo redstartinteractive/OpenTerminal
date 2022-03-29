@@ -1,7 +1,7 @@
 {
     "name": "io.redstart.open-terminal",
     "displayName": "Open Terminal",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "unity": "2021.2",
     "description": "A runtime visual terminal for adding cheat codes and other custom commands with autocomplete, attribute based commands and more!",
     "dependencies": {},
