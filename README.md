@@ -1,5 +1,11 @@
 # Unity OpenTerminal
 
+## Installation
+You can install this package via git url by adding this entry into your manifest.json file
+```
+"io.redstart.open-terminal": "https://github.com/redstartinteractive/OpenTerminal.git"
+```
+
 ## Features
 
 - Add cheat codes to your game.
