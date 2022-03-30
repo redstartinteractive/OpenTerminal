@@ -3,7 +3,7 @@
 ## Installation
 You can install this package via git url by adding this entry into your manifest.json file
 ```
-"io.redstart.open-terminal": "https://github.com/redstartinteractive/OpenTerminal.git"
+"io.redstart.open-terminal": "https://github.com/redstartinteractive/OpenTerminal.git#upm"
 ```
 
 ## Features
@@ -57,6 +57,9 @@ Edit config file to change fonts and colors
 ## Limitations
 
 - Does not support vectors or other parameters which contain "," as method input.
+
+## Deploy new version
+You can deploy a new version of the package to the repository by running the script `deploy.sh`
 
 ## License
 
