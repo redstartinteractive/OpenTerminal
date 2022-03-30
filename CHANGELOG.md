@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - updated the readme to describe new installation and deploy procedures
 - replaced deprecated WWW class
 - make the toggle function public
+- change the order of default commands
 
 ### Fixed
 - Null error when pressing tab with an empty input field
