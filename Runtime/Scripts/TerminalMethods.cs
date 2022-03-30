@@ -17,6 +17,7 @@ namespace OpenTerminal
 
         public string[] GetCommandsContaining(string input)
         {
+            if (string.IsNullOrEmpty(input)) return methodNames.ToArray();
             return methodNames.Where(k => k.Contains(input)).ToArray();
         }
 
