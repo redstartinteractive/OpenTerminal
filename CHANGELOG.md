@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - updated the readme to describe new installation and deploy procedures
 - replaced deprecated WWW class
 
+### Fixed
+- Null error when pressing tab with an empty input field
+
 
 ## [1.0.1] - 2021-03-29
 ### Added
