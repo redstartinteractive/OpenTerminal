@@ -56,11 +56,11 @@ namespace OpenTerminal
             logStack.AddLog(logString, stackTrace, type);
         }
 
-
-        [TerminalCommand("report", "report logs to support")]
-        public void ReportLogs()
+        [TerminalCommand("hide", "Hides the terminal")]
+        public void Hide()
         {
-            logStack.Share();
+            DisplayTerminal = false;
+            OnVisibilityChanged?.Invoke(DisplayTerminal);
         }
 
         [TerminalCommand("clearLogs", "clear all previous logs")]
@@ -87,11 +87,10 @@ namespace OpenTerminal
             return help_string;
         }
 
-        [TerminalCommand("hide", "Hides the terminal")]
-        public void Hide()
+        [TerminalCommand("report", "report logs to support")]
+        public void ReportLogs()
         {
-            DisplayTerminal = false;
-            OnVisibilityChanged?.Invoke(DisplayTerminal);
+            logStack.Share();
         }
 
         public void Show()
