@@ -11,18 +11,22 @@ namespace OpenTerminal
     public class Terminal : MonoBehaviour
     {
         [SerializeField] public TerminalConfig config;
+
         public bool DisplayTerminal { get; private set; }
         public string InputText { get; private set; }
         public string History { get; private set; }
         public List<string> AutoCompList { get; private set; }
         public int AutoCompIndex { get; private set; }
         public string ConsoleLine => (config.console + " ");
-        public TerminalMethods terminalMethods;
+
+        [NonSerialized] public TerminalMethods terminalMethods;
+        [NonSerialized] public int mobileTouchCount = 4;
+        [NonSerialized] public TouchScreenKeyboard touchScreenKeyboard;
+        [NonSerialized] public Action<bool> OnVisibilityChanged;
+
         private TerminalInputHandler inputHandler;
         private TerminalGUI terminalGui;
         private LogStack logStack;
-        public TouchScreenKeyboard touchScreenKeyboard;
-        public int mobileTouchCount = 4;
 
         void Awake()
         {
@@ -87,6 +91,7 @@ namespace OpenTerminal
         public void Hide()
         {
             DisplayTerminal = false;
+            OnVisibilityChanged?.Invoke(DisplayTerminal);
         }
 
         void OnGUI()
@@ -250,6 +255,7 @@ namespace OpenTerminal
         {
             DisplayTerminal = !DisplayTerminal;
             DisplayTouchScreenKeyboard();
+            OnVisibilityChanged?.Invoke(DisplayTerminal);
         }
 
         public void DisplayTouchScreenKeyboard()
