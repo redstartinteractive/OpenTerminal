@@ -94,6 +94,12 @@ namespace OpenTerminal
             OnVisibilityChanged?.Invoke(DisplayTerminal);
         }
 
+        public void Show()
+        {
+            DisplayTerminal = true;
+            OnVisibilityChanged?.Invoke(DisplayTerminal);
+        }
+
         void OnGUI()
         {
             if (!DisplayTerminal) return;
