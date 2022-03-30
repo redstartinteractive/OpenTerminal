@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - deploy script to push the project to the `upm` branch, allowing for easy import to unity
 - namespaces
+- checkbox to config to allow the tilde keyboard key to toggle the terminal visibility
+- function to show the terminal by script
 
 ### Changed
 - Only add to don't destroy on load scene if the terminal is outside of this scene

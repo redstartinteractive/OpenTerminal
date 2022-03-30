@@ -22,7 +22,7 @@ namespace OpenTerminal
                     return;
                 }
             }
-            if (Input.GetKeyDown("`"))
+            if (Input.GetKeyDown(KeyCode.Tilde) && terminal.config.toggleWithTilde)
             {
                 terminal.ToggleTerminal();
                 return;

@@ -4,6 +4,7 @@ namespace OpenTerminal
     [CreateAssetMenu]
     public class TerminalConfig : ScriptableObject
     {
+        public bool toggleWithTilde = true;
         public string console;
         public Font font;
         public int fontSize = 16;
