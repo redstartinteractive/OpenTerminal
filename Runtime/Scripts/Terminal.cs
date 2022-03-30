@@ -23,7 +23,7 @@ public class Terminal : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (gameObject.scene.name != "DontDestroyOnLoad") DontDestroyOnLoad(gameObject);
         if (config == null) config = Resources.Load<TerminalConfig>("Config/ZSH");
         if (mobileTouchCount <= 0) mobileTouchCount = 4;
         AutoCompIndex = 0;
