@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Restructure project so a Unity project can be opened and run from the repo root
 - updated the readme to describe new installation and deploy procedures
 - replaced deprecated WWW class
+- make the toggle function public
 
 ### Fixed
 - Null error when pressing tab with an empty input field

@@ -100,6 +100,13 @@ namespace OpenTerminal
             OnVisibilityChanged?.Invoke(DisplayTerminal);
         }
 
+        public void Toggle()
+        {
+            DisplayTerminal = !DisplayTerminal;
+            DisplayTouchScreenKeyboard();
+            OnVisibilityChanged?.Invoke(DisplayTerminal);
+        }
+
         void OnGUI()
         {
             if (!DisplayTerminal) return;
@@ -255,13 +262,6 @@ namespace OpenTerminal
         {
             yield return new WaitForEndOfFrame();
             History = "";
-        }
-
-        internal void ToggleTerminal()
-        {
-            DisplayTerminal = !DisplayTerminal;
-            DisplayTouchScreenKeyboard();
-            OnVisibilityChanged?.Invoke(DisplayTerminal);
         }
 
         public void DisplayTouchScreenKeyboard()

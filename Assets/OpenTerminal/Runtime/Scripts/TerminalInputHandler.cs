@@ -18,13 +18,13 @@ namespace OpenTerminal
             {
                 if (MobileInput())
                 {
-                    terminal.ToggleTerminal();
+                    terminal.Toggle();
                     return;
                 }
             }
             if (Input.GetKeyDown(KeyCode.Tilde) && terminal.config.toggleWithTilde)
             {
-                terminal.ToggleTerminal();
+                terminal.Toggle();
                 return;
             }
             if (!terminal.DisplayTerminal) return;
